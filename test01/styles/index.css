@@ -1,0 +1,145 @@
+* {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.body {
+  margin: 0;
+  position: relative;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.start {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.start__btn {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  background-color: #808080;
+  color: #f5f5f5;
+  border-radius: 10px;
+  width: 110px;
+  height: 50px;
+  transition: background-color .2s;
+}
+.start__btn:hover {
+  background-color: rgba(128, 128, 255, .7);
+}
+.start__container-result {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.start__box-result {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+.start__result {
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0;
+}
+.start__result_name {
+  font-weight: 600;
+}
+.start__result_value {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: right;
+  white-space: nowrap;
+  width: 50%;
+}
+.start__result-json {
+  margin: 0;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 400;
+  word-wrap: break-word;
+  letter-spacing: 1px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .4);
+  transition: all .3s;
+}
+.popup_active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  padding: 70px 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: steelblue;
+}
+.popup__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  color: brown;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.popup__box-fields {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+}
+.popup__field {
+  height: 25px;
+  outline: 0;
+  border: 1px solid #000;
+  padding: 0 0 0 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.popup__btn-submit {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  background-color: #000;
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+}
